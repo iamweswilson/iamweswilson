@@ -148,7 +148,7 @@ ul.navbar-main {
 .profile-pic {
     max-width: 100px;
     margin-top: 30px;
-    border: 7px solid rgba(255,255,255,0.1);
+    border: 7px solid #eee;
 }
 /*End Who I Am*/
 
@@ -231,7 +231,7 @@ ul.what-list li h3 {
 }
 #contact-me p {
     color: #fff;
-    margin: 0 0 40px;
+    margin: 0 0 30px;
 }
 ul.contact-list {
     margin: 0;

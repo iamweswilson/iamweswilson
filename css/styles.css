@@ -1,0 +1,272 @@
+!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+h2 {
+    color: #333;
+    font-size: 3em;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: center;
+}
+p {
+    text-align: center;
+    color: #aaa;
+}
+.section {
+    padding: 120px 0;
+}
+
+/*Header Navigation*/
+.navbar-header a.navbar-brand {
+    /*background: url('../img/iamweswilson-logo.svg') left no-repeat;
+    height: 54px;*/
+    width: auto;
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.navbar-header a.navbar-brand:hover {
+    color: #2F7B9E;
+}
+.navbar-default {
+    border: none;
+    border-radius: 0px;
+    background: transparent;
+    margin-bottom: 0;
+}
+.navbar-default .container {
+    background-color: transparent;
+}
+ul.navbar-main {
+    float: right;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav>li>a {
+        text-align: right;
+        margin-right: 10px;
+    }
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #2F7B9E;
+}
+.navbar-default .navbar-toggle {
+    border: 0;
+}
+.navbar-default .navbar-toggle:hover {
+    background: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+    opacity: 0.7;
+}
+.navbar-default .navbar-toggle:hover .icon-bar {
+    opacity: 1;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 3px;
+    border-radius: 4px;
+}
+.navbar-default .navbar-collapse {
+    border: 0;
+}
+
+/*End Header Navigation*/
+
+/*Hero*/
+.intro-header {
+    padding-top: 0px;
+    padding-bottom: 0;
+    text-align: center;
+    color: #fff;
+    background: #0ebde5;
+    background-size: cover;
+    position: relative;
+}
+.intro-message {
+    padding: 160px 0 240px;
+}
+.intro-message > h1 {
+    margin: 0;
+    font-size: 5em;
+    font-weight: 300;
+    text-align: center;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    background: #0ebde5;
+}
+@media(max-width:767px) {
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+}
+
+/*End Hero*/
+
+/*Who I Am*/
+#who-i-am {
+    background: url('../img/office-full.jpg') no-repeat fixed 0 0;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+#who-i-am h2 {
+    color: #fff;
+}
+#who-i-am a {
+    color: #fff;
+}
+.profile-pic {
+    max-width: 100px;
+    margin-top: 30px;
+    border: 7px solid rgba(255,255,255,0.1);
+}
+/*End Who I Am*/
+
+/*What I Love*/
+#what-i-love {
+    background: #DF9024;
+}
+#what-i-love h2 {
+    color: #fff;
+    margin-bottom: 80px;
+}
+ul.what-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+ul.what-list li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    ul.what-list li:first-child {
+        margin-bottom: 50px;
+    }
+}
+ul.what-list li h3 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+.what-list p {
+    color: #fff;
+    margin-top: 20px;
+}
+.what-graphic {
+    max-width: 100%;
+}
+/*End What I Love*/
+
+/*What I've Done*/
+#what-ive-done {
+    background: #eee;
+}
+#what-ive-done h2 {
+    margin-bottom: 60px;
+}
+.clients {
+    text-align: center;
+    margin-bottom: 100px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #ddd;
+}
+@media (max-width: 767px) {
+    .clients {
+        margin: 0 10% 100px;
+    }
+}
+.clients.last {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.clients img {
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+/*End What I've Done*/
+
+
+/*Contact Me*/
+#contact-me {
+    background: #1A222C;
+}
+#contact-me h2 {
+    color: #fff;
+}
+#contact-me p {
+    color: #fff;
+    margin: 0 0 40px;
+}
+ul.contact-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+ul.contact-list li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0 20px;
+}
+ul.contact-list li a {
+    color: #fff;
+    opacity: 0.7;
+}
+ul.contact-list li a:hover {
+    opacity: 1;
+}
+
+/*End Contact Me*/
+
+/*Footer*/
+footer {
+    background: #0D1117;
+    text-align: center;
+    padding: 10px 0;
+}
+footer p {
+    color: #292E3D;
+    font-size: 12px;
+    margin-top: 10px;
+}
+footer a {
+    color: #464D69;
+}
+/*End Footer

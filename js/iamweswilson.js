@@ -1,7 +1,13 @@
 // Bkgd scroll
-$('#who-i-am').scroll(function() {
-    var x = $(this).scrollTop();
-    $(this).css('background-position', '0% ' + parseInt(-x / 10) + 'px');
+jQuery(document).ready(function(){
+    if (jQuery(window).width() > 767) {
+        $('#who-i-am').scroll(function() {
+            var x = $(this).scrollTop();
+            $(this).css('background-position', '0% ' + parseInt(-x / 10) + 'px');
+        });
+    } else {
+        
+    }
 });
 
 // Smooth scroll

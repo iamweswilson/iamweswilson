@@ -21,6 +21,8 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 
+    <link rel="stylesheet" href="http://anijs.github.io/lib/animationcss/animate.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -165,12 +167,12 @@
                         <ul class="what-list">
                             <li class="col-lg-6 col-md-6 col-sm-6">
                                 <h3>UI / UX Design</h3>
-                                <img class="what-graphic" src="img/ux-graphic.svg" onerror="this.onerror=null; this.src=img/ux-graphic.png" alt="Wes Wilson UX UI Design">
+                                <img class="what-graphic" src="img/ux-graphic.svg" onerror="this.onerror=null; this.src=img/ux-graphic.png" alt="Wes Wilson UX UI Design" data-anijs="if: scroll, on: window, do: bounceInLeft animated, after: holdAnimClass">
                                 <p>Creating something from nothing is a beautiful thing.</p>
                             </li>
                             <li class="col-lg-6 col-md-6 col-sm-6">
                                 <h3>Front End Dev</h3>
-                                <img class="what-graphic" src="img/front-end-graphic.svg" onerror="this.onerror=null; this.src=img/front-end-graphic.png" alt="Wes Wilson Front End Development">
+                                <img class="what-graphic" src="img/front-end-graphic.svg" onerror="this.onerror=null; this.src=img/front-end-graphic.png" alt="Wes Wilson Front End Developer" data-anijs="if: scroll, on: window, do: bounceInRight animated, after: holdAnimClass">
                                 <p>HTML, CSS and jQuery.</p>
                             </li>
                         </ul>
@@ -265,6 +267,11 @@
 
     <!-- I Am Wes Wilson JS -->
     <script src="js/iamweswilson.js"></script>
+
+    <!-- AniJS -->
+    <script src="http://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+    <!-- ScrollReveal Helper -->
+    <script src="js/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
 
 
 </body>

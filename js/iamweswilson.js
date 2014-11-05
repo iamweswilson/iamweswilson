@@ -18,17 +18,6 @@ $('a').click(function(){
     return false;
 });
 
-// Fade in icons
-$(".what-graphic").hide();
-
-$(window).bind("scroll", function() {
-    if ($(this).scrollTop() > 520) {
-        $(".what-graphic").fadeIn("slow");
-    } else {
-        $(".what-graphic").stop();
-    }
-});
-
 //Typer
 $('[data-typer-targets]').typer(3000);
 

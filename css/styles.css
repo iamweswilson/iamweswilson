@@ -167,7 +167,7 @@ ul.navbar-main {
     margin: 40px 0 60px;
     font-size: 1.7em;
     line-height: 1.8em;
-    border-left: 4px solid #0ebde5;
+    border-left: 4px solid #F96167;
 }
 .icon-wrapper {
     margin: 20px 0;
@@ -178,7 +178,7 @@ ul.navbar-main {
     bottom: -100%;
     left: 0;
     right: 0;
-    background: #D51F59;
+    background: #DB8020;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -195,7 +195,7 @@ ul.navbar-main {
     transition: all 0.5s ease-in-out;
 }
 .useless-button {
-    background: #D51F59;
+    background: #DB8020;
     position: absolute;
     top: -30px;
     left: 50%;
@@ -231,7 +231,7 @@ ul.navbar-main {
     width: 150px;
     height: 30px;
     padding: 8px;
-    background: #D51F59;
+    background: #DB8020;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
 }
@@ -265,17 +265,18 @@ ul.navbar-main {
 }
 #who-i-am p.profile-wrapper {
     text-align: center;
+    color: white;
 }
 .profile-pic {
-    max-width: 100px;
+    max-width: 70px;
     margin-top: 30px;
-    border: 7px solid #eee;
+    border: 4px solid white;
 }
 /*End Who I Am*/
 
 /*What I Love*/
 #what-i-love {
-    background: #DF9024;
+    background: #F8A53C;
 }
 #what-i-love h2 {
     color: white;
@@ -310,6 +311,8 @@ ul.what-list li h3 {
 }
 .what-graphic {
     max-width: 100%;
+    -webkit-animation-delay: 0.2s; /* Chrome, Safari, Opera */
+    animation-delay: 0.2s;
 }
 /*End What I Love*/
 
@@ -345,7 +348,7 @@ ul.what-list li h3 {
 
 /*Contact Me*/
 #contact-me {
-    background: #1A222C;
+    background: #212F3F;
 }
 #contact-me h2 {
     color: white;
@@ -384,16 +387,16 @@ ul.contact-list li a:hover {
 
 /*Footer*/
 footer {
-    background: #0D1117;
+    background: #1B2430;
     text-align: center;
     padding: 10px 0;
 }
 footer p {
-    color: #292E3D;
+    color: #2B394C;
     font-size: 12px;
     margin-top: 10px;
 }
 footer a {
-    color: #464D69;
+    color: #435876;
 }
 /*End Footer

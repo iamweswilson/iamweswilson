@@ -141,6 +141,11 @@ ul.navbar-main {
         min-height: 900px;
     }
 }
+@media (max-width: 550px) {
+    #who-i-am {
+        min-height: 1000px;
+    }
+}
 #who-i-am h2 {
     color: white;
 }

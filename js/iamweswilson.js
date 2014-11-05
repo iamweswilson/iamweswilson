@@ -31,3 +31,10 @@ $(window).bind("scroll", function() {
 
 //Typer
 $('[data-typer-targets]').typer(3000);
+
+
+// Toggle More Stuff Section
+$(".useless-button").click(function () {
+    $('.useless-stuff').toggleClass('open');
+    event.preventDefault();
+});

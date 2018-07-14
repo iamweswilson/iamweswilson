@@ -1,0 +1,5 @@
+<nav class="nav flex-column" id="sidebar-nav">
+  {% for section in site.data.navigation %}
+    <a class="nav-link active" href="#{{ section.link }}">{{ section.name }}</a>
+  {% endfor %}
+</nav>

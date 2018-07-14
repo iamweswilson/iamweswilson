@@ -1,13 +1,14 @@
 // Shrink logo on scroll
 $(function(){
-  // var vheight = $(window).height()-300;
-  var shrinkHeader = 200;
+  // var vheight = $(window).height()-500;
+  var $mainLogo = $('.brand');
+  var shrinkHeader = $mainLogo.offset().top;
    $(window).scroll(function() {
      var scroll = getCurrentScroll();
        if ( scroll >= shrinkHeader ) {
             $('.brand-wrapper').addClass('small-brand');
             $('.more').addClass('hide');
-            $('#sidebar-nav').delay(6000).addClass('show');
+            $('#sidebar-nav').addClass('show');
          }
          else {
              $('.brand-wrapper').removeClass('small-brand');

@@ -5,6 +5,10 @@
 # subnav is an optional collection of items that will appear in a pulldown menu
 #
 
-- id: home
-  title: Home
+- link: about
+  name: About
+- link: work
+  name: Work
+- link: contact
+  name: Contact
 

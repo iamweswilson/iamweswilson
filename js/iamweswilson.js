@@ -1,29 +1,61 @@
-// Bkgd scroll
-jQuery(document).ready(function(){
-    if (jQuery(window).width() > 767) {
-        $('#who-i-am').scroll(function() {
-            var x = $(this).scrollTop();
-            $(this).css('background-position', '0% ' + parseInt(-x / 10) + 'px');
-        });
-    } else {
-        
+// Shrink logo on scroll
+$(function(){
+  // var vheight = $(window).height()-300;
+  var shrinkHeader = 200;
+   $(window).scroll(function() {
+     var scroll = getCurrentScroll();
+       if ( scroll >= shrinkHeader ) {
+            $('.brand-wrapper').addClass('small-brand');
+            $('.more').addClass('hide');
+            $('#sidebar-nav').delay(6000).addClass('show');
+         }
+         else {
+             $('.brand-wrapper').removeClass('small-brand');
+             $('.more').removeClass('hide');
+             $('#sidebar-nav').removeClass('show');
+         }
+   });
+ function getCurrentScroll() {
+     return window.pageYOffset || document.documentElement.scrollTop;
+     }
+ });
+
+
+ // Smooth Scroll
+
+ // Select all links with hashes
+$('a[href*="#"]')
+// Remove links that don't actually link to anything
+.not('[href="#"]')
+.not('[href="#0"]')
+.click(function(event) {
+  // On-page links
+  if (
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+    && 
+    location.hostname == this.hostname
+  ) {
+    // Figure out element to scroll to
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    // Does a scroll target exist?
+    if (target.length) {
+      // Only prevent default if animation is actually gonna happen
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top-100
+      }, 500, function() {
+        // Callback after animation
+        // Must change focus!
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) { // Checking if the target was focused
+          return false;
+        } else {
+          $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+          $target.focus(); // Set focus again
+        };
+      });
     }
-});
-
-// Smooth scroll
-$('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-    return false;
-});
-
-//Typer
-$('[data-typer-targets]').typer(3000);
-
-
-// Toggle More Stuff Section
-$(".useless-button").click(function () {
-    $('.useless-stuff').toggleClass('open');
-    event.preventDefault();
+  }
 });

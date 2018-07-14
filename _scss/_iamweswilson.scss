@@ -1,0 +1,147 @@
+body {
+	background: #111;
+	color: #777;
+	height: 100vh;
+}
+h1, h2, h3 {
+	color: white;
+	text-transform: uppercase;
+}
+
+// logo fills
+.logo-wes {fill:#0FBDE5;}
+.logo-wilson {fill:#EF3953;}
+.logo-other {fill:#FFFFFF;}
+
+.brand-wrapper {
+  display: flex;
+  justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: 50px;
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	-webkit-transition: 0.4s all ease-in-out;
+	-moz-transition: 0.4s all ease-in-out;
+	-ms-transition: 0.4s all ease-in-out;
+	transition: 0.4s all ease-in-out;
+	.brand {
+		position: sticky;
+		top: 50px;
+		margin: 0 auto;
+		width: 25em;
+		max-width: 100%;
+		-webkit-transition: 0.4s all ease-in-out;
+		-moz-transition: 0.4s all ease-in-out;
+		-ms-transition: 0.4s all ease-in-out;
+		transition: 0.4s all ease-in-out;
+	}	
+	&.small-brand {
+		flex-direction: column;
+		width: 100px;
+		height: auto;
+		margin: 0;
+		top: 2rem;
+		-webkit-transition: 0.4s all ease-in-out;
+		-moz-transition: 0.4s all ease-in-out;
+		-ms-transition: 0.4s all ease-in-out;
+		transition: 0.4s all ease-in-out;
+	}
+	&.sidebar {
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: left;
+		z-index: 1000;
+		position: fixed;
+		top: 4rem;
+		height: calc(100vh - 4rem);
+		-webkit-transition: 0.4s all ease-in-out;
+		-moz-transition: 0.4s all ease-in-out;
+		-ms-transition: 0.4s all ease-in-out;
+		transition: 0.4s all ease-in-out;
+		.brand {
+			left: 0;
+			margin: 0 0 1em;
+		}	
+	}
+}
+
+// Mouse animation
+$mouse-width: 2.3rem;
+.mouse {
+	max-width: $mouse-width;
+	width: 100%;
+	height: auto;
+}
+
+.scroll {
+	animation-name: scroll;
+	animation-duration: 1.5s;
+	animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+	animation-iteration-count: infinite;
+	transform-origin: 50% 20.5px;
+	will-change: transform;
+}
+
+.more {
+	margin-top: 5em;
+	display: block;
+	opacity: 0.4;
+	-webkit-transition: 0.4s all;
+	-moz-transition: 0.4s all;
+	-ms-transition: 0.4s all;
+	transition: 0.4s all;
+	&:hover {
+		opacity: 1;
+	}
+	&.hide {
+		display: none;
+	}
+}
+
+@keyframes scroll {
+
+	0%, 20% {
+		transform: translateY(0) scaleY(1);
+	}
+
+	10% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(36px) scaleY(2);
+		opacity: 0.01;
+	}
+
+}
+
+
+// Sidebar
+#sidebar-nav {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	display: none;
+	margin-top: 3rem;
+	a {
+		color: #777;
+		&.active {
+			color: white;
+		}
+	}
+	&.show {
+		display: block;
+	}
+}
+.inline-block {
+	display: inline-block;
+}
+
+// Main Content
+#main {
+	text-align: left;
+	position: relative;
+	overflow-y: scroll;
+}

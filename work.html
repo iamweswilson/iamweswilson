@@ -1,0 +1,56 @@
+---
+layout: otherPages
+title: Work | 
+permalink: /work/
+---
+
+
+		<!-- Mobile Navigation -->
+		{% include mobile-navigation.html %}
+
+		<!-- Main Content -->
+		<div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="brand-wrapper small-brand">
+              <div class="brand">
+                <a href="/">
+                  {% include logo.svg %}
+                </a>
+              </div>
+  
+                <!-- Navigation -->
+                <nav class="nav flex-column show" id="sidebar-nav">
+                    {% for section in site.data.navigation %}
+                      <a class="nav-link" href="#{{ section.link }}">{{ section.name }}</a>
+                    {% endfor %}
+                  </nav>
+  
+          </div>
+        </div>
+							<div class="col condensed" id="main">
+                <div class="work-section">
+                  <h3 class="work-title">HandsDown<span class="project-type">Concept</span></h3>
+                  <ul class="work-tags">
+                    <li>UX Design</li>
+                    <li>front-end</li>
+                    <li>creative direction</li>
+                    <li>wireframing</li>
+                    <li>branding</li>
+                  </ul>
+                  <p>
+                      An exercise to flex that entrepreneurial muscle that lives deep inside me. "HandsDown the best way to get feedback."
+                  </p>
+                  <p>
+                    <img src="/img/work/handsdown-app.png" alt="" class="work-img">
+                  </p>
+                  <p>
+                      Slack has proven to be the defacto communication tool for the teams I'm in, but damn if it's not impossible to collect persist feedback on a design that's posted in Slack. Even with a #design specific channel and thread commenting, the actual design gets pushed up the thread within a few hours. That means active users get to share their thoughts, but anyone in a meeting or another timeszone misses out. Invision is the next best option IMO, but there is some implied luggage if you want to get non-designers to log in, comment, etc. HandsDown was a way to resolve that. Each project would have a single page with a persistent url and token-based identity for feedback. Comments could feed into Slack to encourage participation and keep folks in the loop. Down the road I could see it as a way to select design variations and get final approval.
+                  </p>
+                  <p>
+                    Design is intended to be simple and out of the way, with colors of the uploaded design taking center stage. Shadows and thin lines provide subtle separation and flow. I attempted some experimental UI which would need to be tested before hitting production. As an example, the red lines on the right (under each thumbnail) are meant to visualize votes for those variations. This layout allows for design variations, as well as, multiple view for each variation. Might be a bit much, but that's what users are for right?!?
+                  </p>
+              </div>
+							</div>
+					</div>
+		</div>

@@ -123,6 +123,10 @@ a {
   overflow-y: scroll;
   margin-top: 100vh;
   overflow: visible; }
+  #main.condensed {
+    margin-top: 0; }
+    #main.condensed.mobile-margin {
+      margin-top: 70px; }
   #main .more-arrow {
     position: absolute;
     width: 3em;
@@ -170,4 +174,5 @@ ul.work-tags {
       padding-right: 0; }
 
 .work-img {
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 30px 0; }

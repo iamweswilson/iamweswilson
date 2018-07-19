@@ -1,5 +1,5 @@
 ---
-layout: bootstrap
+layout: homePage
 title: Creative Director
 permalink: /
 ---
@@ -25,7 +25,11 @@ permalink: /
 						</div>
 
 						<!-- Navigation -->
-						{% include navigation.html %}
+						<nav class="nav flex-column" id="sidebar-nav">
+								{% for section in site.data.navigation %}
+									<a class="nav-link" href="#{{ section.link }}">{{ section.name }}</a>
+								{% endfor %}
+							</nav>
 
 			</div>
 					<div class="row">
@@ -96,7 +100,7 @@ permalink: /
 												Cras aliquet interdum turpis eu elementum. Aenean id massa suscipit, consequat urna vitae, rhoncus lectus. Proin nec diam luctus, <a href="#">blandit quam eu</a>, sollicitudin massa.
 										</p>
 										<p>
-											<img src="/img/work/venturelab-web.jpg" alt="" class="work-img">
+											<img src="/img/work/venturelab-web.png" alt="" class="work-img">
 										</p>
 										<p>
 												Cras aliquet interdum turpis eu elementum. Aenean id massa suscipit, consequat urna vitae, rhoncus lectus. Proin nec diam luctus, blandit quam eu, sollicitudin massa. Donec tellus ante, elementum id bibendum at, sagittis at orci. Curabitur id elit ante. Maecenas rhoncus, urna ac vulputate pulvinar, magna augue porta nulla, et aliquam leo nisl vel tellus. Nullam tempus massa eu justo pellentesque, nec facilisis est commodo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec et neque sem. Nunc eleifend elit et eros efficitur, at vulputate est condimentum. Curabitur vel massa eros. Aenean accumsan, mauris at feugiat mollis, justo magna placerat arcu, eu viverra purus tellus id sem. Proin ut nibh condimentum, facilisis ipsum ut, commodo augue. Nullam ut ligula nec augue dictum congue a facilisis justo.
@@ -147,3 +151,6 @@ permalink: /
 							</div>
 					</div>
 		</div>
+
+		    <!-- I am Wes Wilson styles -->
+				<script src="/js/homeLogo.js"></script>

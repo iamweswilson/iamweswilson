@@ -145,6 +145,12 @@ $mouse-width: 2.3rem;
 	overflow-y: scroll;
 	margin-top: 100vh;
 	overflow: visible;
+	&.condensed {
+		margin-top: 0;
+		&.mobile-margin {
+			margin-top: 70px;
+		}
+	}
 	.more-arrow {
 		position: absolute;
 		width: 3em;
@@ -203,4 +209,5 @@ ul.work-tags {
 }
 .work-img {
 	max-width: 100%;
+	margin: 30px 0;
 }

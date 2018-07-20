@@ -1,8 +1,8 @@
 ---
 layout: test
-title: Work | 
+title: Work
 ---
 
-stuff goes below...
+stuff goes below... new
 
-{{page.body}}
+{{post.body}}

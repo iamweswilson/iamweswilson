@@ -5,4 +5,4 @@ title: Work |
 
 stuff goes below...
 
-{{post.content}}
+{{page.body}}

@@ -1,7 +1,7 @@
 ---
 layout: test
 title: Work | 
-permalink: /work/
+permalink: page.permalink
 ---
 
 This is a blog post
